@@ -157,9 +157,10 @@ boolean DHT::read(void) {
 	digitalWrite(_pin, LOW);
 	delay(20);
 	noInterrupts();
-	digitalWrite(_pin, HIGH);
-	delayMicroseconds(40);
+	//digitalWrite(_pin, HIGH);
+	//delayMicroseconds(40);
 	pinMode(_pin, INPUT);
+	delayMicroseconds(40);
 
 // read in timings
 	for ( i=0; i< MAXTIMINGS; i++) {
